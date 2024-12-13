@@ -1,6 +1,3 @@
-//The Bank Management System is a simple Java-based application that facilitates the management of bank accounts using Hibernate for database operations. It allows users to: Create Accounts,View Account Details,Deposit Money,Withdraw Money,Check Balance,Exit
-// The application uses Hibernate ORM to manage the database interactions and ensures secure operations through password-based authentication. It also handles common errors such as invalid inputs and insufficient funds for withdrawals.
-
 import java.util.*;
 public class MainApp {
 
