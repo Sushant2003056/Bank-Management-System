@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	<hibernate-configuration>
+<session-factory>
+<!-- Hibernate dialect  -->
+<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+<!-- database properties  -->
+
+ <!--DB Properties -->
+<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1522:orcl</property>
+<property name="hibernate.connection.username">sushant</property>
+<property name="hibernate.connection.password">sushant</property>
+
+<!--Hibernate Properties -->
+<property name="hibernate.show_sql">true</property>
+<property name="hibernate.cache">false</property>
+<property name="hibernate.hbm2ddl.auto">update</property>
+
+<!--resource xml class -->
+<mapping class="Account" />
+
+
+</session-factory>
+</hibernate-configuration>
